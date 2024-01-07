@@ -1,3 +1,13 @@
 
+// 變數
+@import 'variables';
+
+// 混合
+@import 'mixins/rwd'; 
+
 // 全域相關設定
-@import 'global'
+@import 'global';
+
+// 區塊結構
+@import 'navbar';
+@import 'carousel';
