@@ -12,3 +12,6 @@ body {
   font-family: "Grand Hotel";
   font-size: 2.5rem;
 }
+#navbar .lnr-layers {
+  font-size: 40px;
+}
