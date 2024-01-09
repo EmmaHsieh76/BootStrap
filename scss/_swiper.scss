@@ -22,14 +22,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
 
-  .swiper-slide img {
+    h1,p{
+      font-weight: 700;
+      color:yellow;
+      position: absolute;
+      z-index: 1;
+    }
+
+    h1{
+      top: 100px;
+    }
+    p{
+      top: 300px;
+    }
+
+    img{
+    position: relative;
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    }
   }
+
+  
+
+  
 
   .swiper-pagination-bullet {
     width: 14px;
