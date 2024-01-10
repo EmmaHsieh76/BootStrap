@@ -1,7 +1,6 @@
 #swiper {
-  margin-top: 10vh;
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   position: relative;
   // height: 100vh;
   // background: #eee;
@@ -36,6 +35,7 @@
   }
 
   .container {
+    width: 100vw;
     font-weight: 700;
     position: absolute;
     z-index: 1;
@@ -81,19 +81,20 @@
       display: block;
     }
 
-    img {
+    .home-slide {
       position: relative;
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-
   }
-  .img-responsive {
+
+  
+  .img-responsive,.img-responsive-1 {
     display: none;
-    // max-width: 100%;
-    // height: auto;
+    max-width: 100%;
+    height: auto;
   }
 
   .swiper-pagination-bullet {
@@ -111,17 +112,74 @@
     color: #fff;
     background: #ec5353;
   }
- 
-  @include md{
+
+  .input-group{
+    position: relative;
+  }
+
+  .img-caption-1,
+  .img-caption-2,
+  .img-caption-3,
+  .img-caption-4,
+  .img-caption-5,
+  .img-caption-6 {
+    position: absolute;
+  }
+
+  .img-caption-5 {
+    top: 0;
+    right: 0;
+  }
+
+  .pr {
+    position: relative;
+  }
+
+  .img-caption-1 {
+    bottom: -22vh;
+    right: -15vw;
+  }
+
+  .img-caption-2 {
+    top: -10vh;
+    right: -12vw;
+  }
+
+  .img-caption-3{
+    top: -12vh;
+    left: -10vw;
+  }
+
+  .img-caption-4{
+    bottom: -20vh;
+    left: -13vw;
+  }
+  
+  .img-caption-5{
+    top: 0;
+    right: 3vw;
+  }
+
+  @include md {
     .img-responsive {
+      display: none;
+    }
+    
+    .img-responsive-1{
       display: inline-block;
       max-width: 100%;
       height: auto;
+      img{
+        width: 100%;
+        height: auto;
+      }
     }
+    
+    
   }
 
   @include lg {
-
+    height: 100vh;
     span {
       font-size: 36px;
     }
@@ -139,12 +197,16 @@
       border-radius: 50px;
     }
 
-    .img-responsive {
+   
+
+    
+  }
+
+  @include xl{
+     .img-responsive {
       display: inline-block;
       max-width: 100%;
       height: auto;
     }
-
-   
   }
 }
