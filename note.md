@@ -1,12 +1,22 @@
 # 參考網站
+
 https://demo.templatemonster.com/demo/61177.html
 
 # 粒子效果(particle)
+
 https://vincentgarreau.com/particles.js/
 
-# 響應式網頁一次看三個尺寸
-https://responsively.app/download
+# 暫緩效果
 
+https://github.com/nk-o/jarallax
+
+# drawio 心智圖
+
+https://app.diagrams.net/?src=about#G1GkIBib1SI4AdNdshTRUWCMr2KjDFkSCT
+
+# 響應式網頁一次看三個尺寸
+
+https://responsively.app/download
 
 ### 需求
 
