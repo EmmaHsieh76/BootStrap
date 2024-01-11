@@ -5,6 +5,38 @@ body {
   line-height: 1.2;
   color: #2b2c2f;
 }
+body h1 {
+  font-size: 50px;
+}
+body h2 {
+  font-size: 45px;
+}
+body h3 {
+  font-size: 40px;
+}
+body h4 {
+  font-size: 35px;
+}
+body h5 {
+  font-size: 30px;
+}
+@media (min-width: 992px) {
+  body h1 {
+    font-size: 95px;
+  }
+  body h2 {
+    font-size: 80px;
+  }
+  body h3 {
+    font-size: 65px;
+  }
+  body h4 {
+    font-size: 50px;
+  }
+  body h5 {
+    font-size: 35px;
+  }
+}
 
 #navbar {
   --bs-navbar-hover-color: #f0ae35;
@@ -55,9 +87,11 @@ body {
 }
 
 #swiper {
+  margin-top: 10vh;
   width: 100vw;
   height: 50vh;
   position: relative;
+  color: #fff;
   font-family: "Changa One", sans-serif;
 }
 #swiper .swiper {
@@ -76,18 +110,43 @@ body {
   background-color: #ec5353;
   color: #fff;
 }
-#swiper .group-sm > h1 {
+#swiper .btn:hover {
+  color: #fff;
+  background-color: #f9b129;
+  border-color: #f9b129;
+}
+#swiper h1 {
   font-size: 50px;
 }
+#swiper h2 {
+  font-size: 45px;
+}
+#swiper h3 {
+  font-size: 40px;
+}
+#swiper h4 {
+  font-size: 35px;
+}
+#swiper h5 {
+  font-size: 30px;
+}
+#swiper h5:before,
+#swiper h5:after {
+  content: "";
+  display: inline-block;
+  border-top: 2px solid;
+  width: 20px;
+  margin: 0 7px;
+  height: 10px;
+}
 #swiper .container {
-  width: 100vw;
+  width: 100%;
   font-weight: 700;
   position: absolute;
   z-index: 1;
 }
 #swiper .text-primary-lighter {
   color: #fccb56;
-  font-size: 40px;
 }
 #swiper .label-swiper {
   position: relative;
@@ -95,12 +154,12 @@ body {
   text-align: center;
 }
 #swiper .label-swiper:before {
+  content: "";
   position: absolute;
   top: -5px;
   bottom: 0;
   right: -12px;
   left: -5px;
-  content: "";
   background-color: #ec5353;
   z-index: -1;
   -webkit-transform: skew(-20deg);
@@ -135,7 +194,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#swiper .img-responsive, #swiper .img-responsive-1 {
+#swiper .img-responsive,
+#swiper .img-responsive-1 {
   display: none;
   max-width: 100%;
   height: auto;
@@ -204,6 +264,15 @@ body {
     width: 100%;
     height: auto;
   }
+  #swiper h5:before,
+  #swiper h5:after {
+    content: "";
+    display: inline-block;
+    border-top: 2px solid;
+    width: 44px;
+    margin: 0 7px;
+    height: 10px;
+  }
 }
 @media (min-width: 992px) {
   #swiper {
@@ -212,11 +281,20 @@ body {
   #swiper span {
     font-size: 36px;
   }
-  #swiper .group-sm > h1 {
+  #swiper h1 {
     font-size: 95px;
   }
-  #swiper .text-primary-lighter {
+  #swiper h2 {
+    font-size: 80px;
+  }
+  #swiper h3 {
     font-size: 65px;
+  }
+  #swiper h4 {
+    font-size: 50px;
+  }
+  #swiper h5 {
+    font-size: 40px;
   }
   #swiper .btn-md {
     width: 18vw;
