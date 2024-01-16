@@ -2,9 +2,7 @@ body {
   background-color: #333;
   font-weight: 400;
   font-size: 14px;
-  overflow-x: hidden;
   line-height: 1.2;
-  color: #2b2c2f;
 }
 body h1 {
   font-size: 50px;
@@ -313,6 +311,10 @@ body h5 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+#threeImage .container-wide {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 #threeImage a {
   text-decoration: none;
   color: white;
@@ -330,21 +332,34 @@ body h5 {
   font-family: "Changa One", cursive;
   font-weight: 400;
   line-height: 1.5;
-  font-size: 34px;
+  display: block;
   font-style: italic;
 }
 #threeImage a p {
+  display: block;
   font-family: "Lato";
-  font-size: 18px;
+  font-size: 1.5rem;
   line-height: 23px;
+  width: 100%;
 }
 #threeImage .thumbnail-variant-3 {
   position: relative;
   width: 100%;
   height: auto;
 }
+#threeImage .thumbnail-variant-3::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.35);
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+}
 #threeImage .caption {
   position: absolute;
+  padding-bottom: 50px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #threeImage {
@@ -354,17 +369,33 @@ body h5 {
   #threeImage .container-wide {
     min-width: 750px;
   }
+  #threeImage h3 {
+    line-height: 1 !important;
+  }
+  #threeImage .caption {
+    padding-bottom: 0px;
+  }
 }
 @media (min-width: 992px) {
   #threeImage .container-wide {
     min-width: 970px;
   }
-  #threeImage h3 {
-    font-size: 55px;
+  #threeImage a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (min-width: 1200px) {
   #threeImage .container-wide {
     min-width: 1200px;
   }
+}
+
+#burger {
+  font-family: "Changa One", cursive;
+}
+#burger h3 {
+  text-align: center;
+  font-size: 35px;
 }

@@ -3,11 +3,10 @@
   padding-bottom: 50px;
 
   .container-wide {
-    // min-width: 480px;
     // margin-right: auto;
     // margin-left: auto;
-    // padding-left: 15px;
-    // padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   a {
@@ -21,14 +20,15 @@
       font-family: 'Changa One', cursive;
       font-weight: 400;
       line-height: 1.5;
-      font-size: 34px;
+      display: block;
       font-style: italic;
     }
     p {
+      display: block;
       font-family: 'Lato';
-      font-size: 18px;
+      font-size: 1.5rem;
       line-height: 23px;
-      
+      width: 100%;
     }
   }
 
@@ -38,17 +38,20 @@
     height: auto;
   }
 
-  // .thumbnail-variant-3::before {
-  //   content: '';
-  //   position: absolute;
-  //   background-color:rgba(0,0,0,0.35);
-  //   bottom: 0;
-  //   right: 0;
-  //   top: 0;
-  //   left: 0;
-  // }
+  .thumbnail-variant-3::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.35);
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+  }
+
   .caption {
     position: absolute;
+    padding-bottom: 50px;
+    width: 100%;
   }
 
   @include md {
@@ -58,15 +61,22 @@
     .container-wide {
       min-width: 750px;
     }
+
+    h3 {
+      line-height: 1 !important;
+    }
+
+    .caption {
+      padding-bottom: 0px;
+    }
   }
 
   @include lg {
     .container-wide {
       min-width: 970px;
     }
-
-    h3 {
-      font-size: 55px;
+    a {
+      align-items: center;
     }
   }
 
