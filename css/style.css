@@ -2,6 +2,7 @@ body {
   background-color: #333;
   font-weight: 400;
   font-size: 14px;
+  overflow-x: hidden;
   line-height: 1.2;
   color: #2b2c2f;
 }
@@ -68,13 +69,12 @@ body h5 {
   font-size: 1rem;
 }
 #navbar .nav-item img {
-  margin-right: 10px;
-  margin-left: 1rem;
   height: 28px;
   width: 28px;
 }
-#navbar .nav-item .nav-link:nth-child(5) {
-  font-size: 18px;
+#navbar .nav-item a {
+  padding-right: 10px;
+  padding-left: 1rem;
 }
 @media (min-width: 992px) {
   #navbar {
@@ -306,5 +306,65 @@ body h5 {
     display: inline-block;
     max-width: 100%;
     height: auto;
+  }
+}
+
+#threeImage {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#threeImage a {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+#threeImage a h3 {
+  font-family: "Changa One", cursive;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 34px;
+  font-style: italic;
+}
+#threeImage a p {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 23px;
+}
+#threeImage .thumbnail-variant-3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#threeImage .caption {
+  position: absolute;
+}
+@media (min-width: 768px) {
+  #threeImage {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #threeImage .container-wide {
+    min-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #threeImage .container-wide {
+    min-width: 970px;
+  }
+  #threeImage h3 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  #threeImage .container-wide {
+    min-width: 1200px;
   }
 }

@@ -1,0 +1,78 @@
+#threeImage {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .container-wide {
+    // min-width: 480px;
+    // margin-right: auto;
+    // margin-left: auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    h3 {
+      font-family: 'Changa One', cursive;
+      font-weight: 400;
+      line-height: 1.5;
+      font-size: 34px;
+      font-style: italic;
+    }
+    p {
+      font-family: 'Lato';
+      font-size: 18px;
+      line-height: 23px;
+      
+    }
+  }
+
+  .thumbnail-variant-3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  // .thumbnail-variant-3::before {
+  //   content: '';
+  //   position: absolute;
+  //   background-color:rgba(0,0,0,0.35);
+  //   bottom: 0;
+  //   right: 0;
+  //   top: 0;
+  //   left: 0;
+  // }
+  .caption {
+    position: absolute;
+  }
+
+  @include md {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .container-wide {
+      min-width: 750px;
+    }
+  }
+
+  @include lg {
+    .container-wide {
+      min-width: 970px;
+    }
+
+    h3 {
+      font-size: 55px;
+    }
+  }
+
+  @include xl {
+    .container-wide {
+      min-width: 1200px;
+    }
+  }
+}
