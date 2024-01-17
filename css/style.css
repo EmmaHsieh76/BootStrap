@@ -1,5 +1,5 @@
 body {
-  background-color: #333;
+  background-color: #f2f3f8;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -393,9 +393,103 @@ body h5 {
 }
 
 #burger {
-  font-family: "Changa One", cursive;
+  font-family: "Lato";
+}
+#burger :root {
+  --swiper-navigation-color:#ec5353!important;
+}
+#burger .card {
+  --bs-card-border-color:none!important;
 }
 #burger h3 {
+  font-family: "Changa One", cursive;
   text-align: center;
   font-size: 35px;
+}
+#burger .responsive-tabs .resp-tabs-list {
+  display: none;
+}
+#burger ul {
+  list-style: none;
+}
+#burger .swiper-button-next, #burger .swiper-button-prev {
+  color: #ec5353 !important;
+}
+#burger .swiper {
+  width: 100%;
+  height: 100%;
+}
+#burger .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#burger .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#burger .card-title > a {
+  color: #2b2c2f;
+  font-size: 24px;
+}
+#burger .card-text {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+#burger .btn-danger {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ec5353;
+  --bs-btn-border-color: ##ec5353;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #f9b129;
+  --bs-btn-hover-border-color: #f9b129;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ec5353;
+  --bs-btn-active-border-color: #ec5353;
+  --bs-btn-active-shadow: none;
+  font-size: 1.2rem;
+  padding: 10px 28px;
+  border-radius: 35px;
+}
+@media (min-width: 992px) {
+  #burger .responsive-tabs .resp-tabs-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 1rem;
+    font-family: "Lato";
+  }
+  #burger .btn {
+    background: transparent;
+    color: #9b9b9b;
+    border: 2px solid #e0e1e9;
+    border-radius: 35px;
+    -webkit-box-shadow: 0px 0px 0px 0px transparent;
+            box-shadow: 0px 0px 0px 0px transparent;
+    padding: 10px 36px;
+  }
+  #burger .btn:hover {
+    border: 2px solid #ec5353;
+    color: #ec5353;
+  }
+  #burger .btn:focus {
+    border: 2px solid #ec5353;
+    color: #ec5353;
+  }
 }
