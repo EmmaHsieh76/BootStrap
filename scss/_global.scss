@@ -34,6 +34,31 @@ body {
     font-size: 30px;
   }
 
+  .btn-danger{
+    border-radius: 20px;
+    font-size: 1rem;
+    --bs-btn-hover-bg: #f9b129;
+    --bs-btn-hover-border-color: #f9b129;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    font-family: "Lato";
+    padding: 5px 28px;
+  }
+  .font{
+    font-size: 12px!important;
+  }
+  
+  .btn{
+    font-weight: 700;
+  }
+
+  .card{
+    text-align: center;
+    --bs-card-bg: transparent;
+    --bs-card-border-color:transparent;
+    font-family: "Changa One", cursive;
+  }
+
   @include lg {
     h1 {
       font-size: 95px;
@@ -49,6 +74,16 @@ body {
     }
     h5 {
       font-size: 35px;
+    }
+
+    .btn-danger{
+      border-radius: 35px;
+      font-size: 1rem;
+      width: 30%;
+      --bs-btn-hover-bg: #f9b129;
+      --bs-btn-hover-border-color: #f9b129;
+      --bs-btn-color: #fff;
+      --bs-btn-hover-color: #fff;
     }
   }
 }

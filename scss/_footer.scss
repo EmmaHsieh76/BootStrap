@@ -1,0 +1,30 @@
+#footer{
+  width: 100vw;
+  height: 50vh;
+  background: #000;
+  color:#fff;
+  font-family: "Lato";
+  
+  h4{
+    font-size: 1.5rem;
+  }
+  
+  .text{
+    font-size: 10px;
+  }
+
+  p{
+    color:#9b9b9b;
+    margin: 2px;
+  }
+  a{
+    text-decoration: none; 
+    color:#9b9b9b;
+  }
+  li>a::after{
+    content: "/";
+    padding:0 12px;
+    color:#9b9b9b;
+  }
+
+}
