@@ -18,8 +18,8 @@
   <!-- animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- responsive-tabs -->
-  <link type="text/css" rel="stylesheet" href="./css/responsive-tabs.css" />
-  <link type="text/css" rel="stylesheet" href="./css/style1.css" />
+  <!-- <link type="text/css" rel="stylesheet" href="./css/responsive-tabs.css" /> -->
+  <!-- <link type="text/css" rel="stylesheet" href="./css/style1.css" /> -->
   <!-- bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- 自己的css設定 -->
@@ -87,7 +87,7 @@
                 </div>
                 <h3 class="text-primary-lighter mt-3 animate__fadeInUp animate__animated">with seafood</h3>
                 <a href="#"
-                  class="btn btn-shape btn-color btn-md mt-3 py-lg-3 px-lg-5 animate__fadeInUp animate__animated">order
+                  class="btn btn-shape btn-color btn-md mt-3 py-lg-3 px-lg-5 animate__fadeInUp animate__animated ">order
                   online</a>
               </div>
               <div class=" col-md-7 col-lg-8">
@@ -113,7 +113,8 @@
                   <img src="./images/slide-caption-image-4-179x213.png">
                 </div>
                 <div
-                  class="img-responsive img-caption-4 veil animate__fadeInBottomLeft animate__animated animate__delay-0.5s">
+                  class="img-responsive img-caption-4 veil animate__fadeInBottomLeft animate__animated animate__delay-0.5s"
+                  style="pointer-events: none;">
                   <img src="./images/slide-caption-image-5-522x343.png">
                 </div>
               </div>
@@ -155,36 +156,36 @@
   </div>
 
   <!-- 三張小圖 -->
-  <div  id="threeImage">
-    <div class="container-wide">
+  <div id="threeImage">
+    <div class="container-wide ">
       <div class="row justify-content-center">
         <div class="col-auto col-md-4 my-3">
-          <a href="#" class="thumbnail-variant-3" >
+          <a href="#" class="thumbnail-variant-3">
             <img src="./images/index-01-566x401.jpg" class="img-fluid  d-block">
             <div class="text-center caption">
-              <h3 >For Vegans</h3>
+              <h3>For Vegans</h3>
               <p>Burger + French Fries + Drink</p>
             </div>
           </a>
-        </div> 
+        </div>
         <div class="col-auto col-md-4 my-3">
-          <a href="#" class="thumbnail-variant-3" >
+          <a href="#" class="thumbnail-variant-3">
             <img src="./images/index-02-566x401.jpg" class="img-fluid  d-block">
             <div class="text-center caption">
               <h3>Order Online</h3>
               <p>Available Every Day 9 AM - 11 PM</p>
             </div>
           </a>
-        </div> 
+        </div>
         <div class="col-auto col-md-4 my-3">
-          <a href="#" class="thumbnail-variant-3" >
+          <a href="#" class="thumbnail-variant-3">
             <img src="./images/index-03-566x401.jpg" class="img-fluid  d-block">
             <div class="text-center caption">
               <h3>Cake Specials</h3>
               <p>Every Friday Only $0.99</p>
             </div>
           </a>
-        </div> 
+        </div>
       </div>
     </div>
   </div>
@@ -196,91 +197,123 @@
     <h3>Our MENU</h3>
     <div class="w-100 d-block responsive-tabs responsive-tabs-carousel mt-4">
       <ul class="resp-tabs-list">
-        <button tpye="button" class="btn">Burgers</button>
-        <button tpye="button" class="btn" >Toasts</button>
-        <button tpye="button" class="btn" >Pizzas</button>
-        <button tpye="button" class="btn">Salads</button>
-        <button tpye="button" class="btn" >Drinks</button>
-        <button tpye="button" class="btn" >Desserts</button>
+        <button tpye="button" class="btn2" onclick="show('flush-collapseOne')">Burgers</button>
+        <button tpye="button" class="btn2">Toasts</button>
+        <button tpye="button" class="btn2">Pizzas</button>
+        <button tpye="button" class="btn2">Salads</button>
+        <button tpye="button" class="btn2">Drinks</button>
+        <button tpye="button" class="btn2">Desserts</button>
       </ul>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Burgers
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" >
-              <div class="accordion-body">
-                <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="card text-center " style="width: 100%;">
-                        <img src="./images/menu-modern-1-310x260.png" class="card-img-top  w-50 h-50 mx-auto">
-                        <div class="card-body h-50">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed font-3" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Burgers
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+            <div class="accordion-body">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card text-center " style="width: 100%;">
+                      <img src="./images/menu-modern-1-310x260.png" class="card-img-top  w-50 h-50 mx-auto">
+                      <div class="card-body h-50">
+                        <h5 class="card-title"><a href="#">Mexican Burger</a></h5>
+                        <p class="card-text fst-italic fst-italic">This Mexican-style burger is pumped up with flavor
+                          from chili
+                          powder, cilantro, and jalapeno pepper. Served on buns topped with lettuce.</p>
+                        <p class="price">
+                          $12.50
+                        </p>
                         <a href="#" class="btn btn-danger">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card text-center " style="width: 100%;">
-                        <img src="./images/menu-modern-2-310x260.png" class="card-img-top  w-50 h-50 mx-auto">
-                        <div class="card-body h-50">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-danger">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card text-center " style="width: 100%;">
-                        <img src="./images/menu-modern-3-310x260.png" class="card-img-top  w-50 h-50 mx-auto">
-                        <div class="card-body h-50">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-danger">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card text-center " style="width: 100%;">
-                        <img src="./images/menu-modern-4-310x260.png" class="card-img-top  w-50 h-auto mx-auto">
-                        <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="text-decoration-none">Card title</a></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-danger">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card text-center " style="width: 100%;">
-                        <img src="./images/menu-modern-5-310x260.png" class="card-img-top  w-50 h-auto mx-auto">
-                        <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="text-decoration-none">Card title</a></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-danger">Go somewhere</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card text-center " style="width: 100%;">
-                        <img src="./images/menu-modern-6-310x260.png" class="card-img-top  w-50 h-auto mx-auto">
-                        <div class="card-body">
-                        <h5 class="card-title"><a href="#" class="text-decoration-none">Card title</a></h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-danger">Go somewhere</a>
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-slide">
+                    <div class="card text-center " style="width: 100%;">
+                      <img src="./images/menu-modern-2-310x260.png" class="card-img-top  w-50 h-50 mx-auto">
+                      <div class="card-body h-50">
+                        <h5 class="card-title"><a href="#">Card title</a></h5>
+                        <p class="card-text fst-italic">Some quick example text to build on the card title and make up
+                          the bulk of
+                          the card's content.</p>
+                        <p class="price">
+                          $12.50
+                        </p>
+                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card text-center " style="width: 100%;">
+                      <img src="./images/menu-modern-3-310x260.png" class="card-img-top  w-50 h-50 mx-auto">
+                      <div class="card-body h-50">
+                        <h5 class="card-title"><a href="#">Mini Burger</a></h5>
+                        <p class="card-text fst-italic">Some quick example text to build on the card title and make up
+                          the bulk of
+                          the card's content.</p>
+                        <p class="price">
+                          $12.50
+                        </p>
+                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card text-center " style="width: 100%;">
+                      <img src="./images/menu-modern-4-310x260.png" class="card-img-top  w-50 h-auto mx-auto">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="#">Card title</a></h5>
+                        <p class="card-text fst-italic">Some quick example text to build on the card title and make up
+                          the bulk of
+                          the card's content.</p>
+                        <p class="price">
+                          $12.50
+                        </p>
+                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card text-center " style="width: 100%;">
+                      <img src="./images/menu-modern-5-310x260.png" class="card-img-top  w-50 h-auto mx-auto">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none">Card title</a></h5>
+                        <p class="card-text fst-italic">Some quick example text to build on the card title and make up
+                          the bulk of
+                          the card's content.</p>
+                        <p class="price">
+                          $12.50
+                        </p>
+                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card text-center " style="width: 100%;">
+                      <img src="./images/menu-modern-6-310x260.png" class="card-img-top  w-50 h-auto mx-auto">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="#" class="text-decoration-none">Card title</a></h5>
+                        <p class="card-text fst-italic">Some quick example text to build on the card title and make up
+                          the bulk of
+                          the card's content.</p>
+                        <p class="price">
+                          $12.50
+                        </p>
+                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -290,25 +323,25 @@
   <div id="jarallax">
     <img class="jarallax-img" src="./images/home-slide-1-1920x800.jpg">
     <img class="food" src="./images/parallax-03.png">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Free Delivery</h5>
-          <p class="card-text">SANDWICH DAY</p>
-          <a href="#" class="btn btn-danger font">ORDER ONLINE</a>
-        </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Free Delivery</h5>
+        <p class="card-text fst-italic">SANDWICH DAY</p>
+        <a href="#" class="btn btn-danger">ORDER ONLINE</a>
       </div>
+    </div>
   </div>
-  
+
   <!-- 四個ICON -->
   <div id="icon">
     <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-auto col-md-6 col-lg-3">
-          <div class="card pt-3" >
+          <div class="card pt-3">
             <img src="./images/ICON(2)-01.png" class="card-img-top mx-auto">
             <div class="card-body text-center">
               <h5 class="card-title text-uppercase">Fast Delivery</h5>
-              <div class="hr my-2 mx-auto"></div>
+              <div class="hr my-4 mx-auto"></div>
               <p class="card-text">
                 Everything you order at QuickFood will be quickly delivered to your door.
               </p>
@@ -316,11 +349,11 @@
           </div>
         </div>
         <div class="col-auto col-md-6  col-lg-3">
-          <div class="card pt-3" >
+          <div class="card pt-3">
             <img src="./images/ICON(2)-02.png" class="card-img-top mx-auto">
             <div class="card-body text-center">
               <h5 class="card-title text-uppercase">fresh food</h5>
-              <div class="hr my-2 mx-auto"></div>
+              <div class="hr my-4 mx-auto"></div>
               <p class="card-text">
                 We use only the best ingredients to cook the tasty fresh food for you.
               </p>
@@ -328,11 +361,11 @@
           </div>
         </div>
         <div class="col-auto col-md-6  col-lg-3">
-          <div class="card pt-3" >
+          <div class="card pt-3">
             <img src="./images/ICON(2)-03.png" class="card-img-top mx-auto">
             <div class="card-body text-center">
               <h5 class="card-title text-uppercase">experienced chefs</h5>
-              <div class="hr my-2 mx-auto"></div>
+              <div class="hr my-4 mx-auto"></div>
               <p class="card-text">
                 Our staff consists of chefs and cooks with years of experience.
               </p>
@@ -340,11 +373,11 @@
           </div>
         </div>
         <div class="col-auto col-md-6  col-lg-3">
-          <div class="card pt-3" >
+          <div class="card pt-3">
             <img src="./images/ICON(2)-04.png" class="card-img-top mx-auto">
             <div class="card-body text-center">
               <h5 class="card-title text-uppercase">a variety of dishes</h5>
-              <div class="hr my-2 mx-auto"></div>
+              <div class="hr my-4 mx-auto"></div>
               <p class="card-text">
                 In our menu you’ll find a wide variety of dishes, desserts, and drinks.
               </p>
@@ -358,43 +391,49 @@
   <!-- 四張圖 -->
   <div id="fourimage">
     <div class="row ps-0 pb-0">
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <img src="./images/index-gallery-1-480x394.jpg" class="w-100">
+      <div class="col-sm-6  col-lg-3 ">
+        <img src="./images/index-gallery-1-480x394.jpg" class="img-fluid">
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <img src="./images/index-gallery-2-480x394.jpg" class="w-100">
+      <div class="col-sm-6  col-lg-3">
+        <img src="./images/index-gallery-2-480x394.jpg" class="img-fluid">
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <img src="./images/index-gallery-3-480x394.jpg" class="w-100">
+      <div class="col-sm-6  col-lg-3">
+        <img src="./images/index-gallery-3-480x394.jpg" class="img-fluid">
       </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <img src="./images/index-gallery-4-480x394.jpg" class="w-100">
+      <div class="col-sm-6  col-lg-3">
+        <img src="./images/index-gallery-4-480x394.jpg" class="img-fluid">
       </div>
     </div>
   </div>
 
   <div id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7035067187976!2d121.41693530883092!3d25.044134137794785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1705635308636!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7035067187976!2d121.41693530883092!3d25.044134137794785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1705635308636!5m2!1szh-TW!2stw"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
 
   <div id="footer">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-auto">
-          <h4 class="text-center">QuickFood</h5>
-          <div class="d-flex text">
-            <span>Address:</span>
-            <p>267 Park Avenue  New York, NY 90210</p>
+    <div class="container h-100 ">
+      <div class="row h-100 d-flex align-content-center">
+        <div class="col-12 col-md-6 col-lg-3 px-5 pt-4 py-lg-4">
+          <h4 class="text-center font-1">QuickFood</h4>
+          <div class="">
+            <div class="d-flex text">
+              <span class="me-2">Address:</span>
+              <p>267 Park Avenue New York, NY 90210</p>
+            </div>
+            <div class="d-flex text">
+              <span class="me-2">Email:</span>
+              <p><a href="#">info@demolink.org</a></p>
+            </div>
           </div>
-          <div class="d-flex text">
-            <span>Email:</span>
-            <p><a href="#">info@demolink.org</a></p>
-          </div>
+
         </div>
-        <div class="col-auto">
-          <h4 class="text-center text-uppercase">Our menu</h5>
-          <ul class="list-unstyled">
+        <div class="col-12 col-md-6 col-lg-3 px-5 pt-4 py-lg-4">
+          <h4 class="text-center text-uppercase font-2">Our menu</h4>
+          <ul class="list-unstyled d-flex justify-content-around  flex-wrap">
             <li><a href="#">burgers</a></li>
             <li><a href="#">pizzas</a></li>
             <li><a href="#">toasts</a></li>
@@ -403,8 +442,43 @@
             <li><a href="#">desserts</a></li>
           </ul>
         </div>
+        <div class="col-12 col-lg-6 px-5 py-4">
+          <h4 class="text-uppercase font-2 text-center">newsletter</h4>
+          <div class="w-100">
+            <form class="text-center w-100">
+              <input type="email" placeholder="Your Email" class="mx-2 w-50">
+              <button class="btn bg-danger text-uppercase m-2">Subscribe</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+
+  <!-- 頁尾 -->
+  <div id="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start my-4">
+          <p>
+            QuickFood&nbsp;©&nbsp;2024&nbsp;<a href="#">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-6 my-4">
+          <ul class="list-unstyled d-flex justify-content-center justify-content-md-end m-0">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
   </div>
 
   <!-- 引入bootstrap的js -->
@@ -415,8 +489,8 @@
   <!-- 引入jq -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
 
-<!-- responsiveTabs -->
-  <script src="./js/jquery.responsiveTabs.js"></script>
+  <!-- responsiveTabs -->
+  <!-- <script src="./js/jquery.responsiveTabs.js"></script> -->
 
   <!-- swiper -->
   <script>
@@ -454,7 +528,7 @@
     });
 
   </script>
-  
+
   <!-- jarallax -->
   <script src="./js/jarallax.js" type="module">
     import { jarallax } from 'https://cdn.jsdelivr.net/npm/jarallax@2/+esm'
@@ -462,6 +536,13 @@
     $('.jarallax').jarallax();
   </script>
 
+  <script src="https://kit.fontawesome.com/9120ec7c14.js" crossorigin="anonymous"></script>
+
+  <script>
+    function show(itemName) {
+      $('#' + itemName).removeClass('collapse').addClass('show')
+    }
+  </script>
 </body>
 
 </html>
