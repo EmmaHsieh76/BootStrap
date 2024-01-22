@@ -371,6 +371,9 @@ body .card {
       -ms-flex-align: end;
           align-items: end;
 }
+#threeImage a :hover {
+  color: #f9b129;
+}
 #threeImage a h3 {
   font-family: "Changa One", cursive;
   font-weight: 400;
@@ -397,7 +400,6 @@ body .card {
   bottom: 0;
   right: 0;
   top: 0;
-  left: 0;
 }
 #threeImage .caption {
   position: absolute;

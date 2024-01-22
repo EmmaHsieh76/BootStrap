@@ -19,3 +19,8 @@
 
 - 套件網址:https://github.com/nk-o/jarallax
 - 使用區塊:id='jarallax'
+
+## - 套件名稱:GSAP
+
+- 套件網址:https://gsap.com/
+- 使用區塊:ID='threeImage'、id="icon"

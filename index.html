@@ -26,6 +26,15 @@
   <link rel="stylesheet" href="./css/bootstrap.css">
   <!-- 自己的css設定 -->
   <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    .gsap-marker-end,
+    .gsap-marker-start,
+    .gsap-marker-scroller-start,
+    .gsap-marker-scroller-end {
+      z-index: 9999 !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -160,7 +169,7 @@
   <!-- 三張小圖 -->
   <div id="threeImage">
     <div class="container-wide ">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center pit">
         <div class="col-auto col-md-4 my-3">
           <a href="#" class="thumbnail-variant-3">
             <img src="./images/index-01-566x401.jpg" class="img-fluid  d-block">
@@ -284,7 +293,8 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="card text-center " style="width: 100%;">
-                      <a href="./images/menu-modern-5-310x260.png" class="image-popup-no-margins"> </a>
+                      <a href="./images/menu-modern-5-310x260.png" class="image-popup-no-margins"><img
+                          src="./images/menu-modern-5-310x260.png" class="card-img-top  w-50 h-auto mx-auto"> </a>
                       <div class="card-body">
                         <h5 class="card-title"><a href="#" class="text-decoration-none">Card title</a></h5>
                         <p class="card-text fst-italic">Some quick example text to build on the card title and make up
@@ -341,8 +351,8 @@
   <!-- 四個ICON -->
   <div id="icon">
     <div class="container my-5">
-      <div class="row justify-content-center">
-        <div class="col-auto col-md-6 col-lg-3">
+      <div class="row justify-content-center icon">
+        <div class="col-auto col-md-6 col-lg-3   ">
           <div class="card pt-3">
             <img src="./images/ICON(2)-01.png" class="card-img-top mx-auto">
             <div class="card-body text-center">
@@ -354,7 +364,7 @@
             </div>
           </div>
         </div>
-        <div class="col-auto col-md-6  col-lg-3">
+        <div class="col-auto col-md-6  col-lg-3  ">
           <div class="card pt-3">
             <img src="./images/ICON(2)-02.png" class="card-img-top mx-auto">
             <div class="card-body text-center">
@@ -366,7 +376,7 @@
             </div>
           </div>
         </div>
-        <div class="col-auto col-md-6  col-lg-3">
+        <div class="col-auto col-md-6  col-lg-3  ">
           <div class="card pt-3">
             <img src="./images/ICON(2)-03.png" class="card-img-top mx-auto">
             <div class="card-body text-center">
@@ -378,7 +388,7 @@
             </div>
           </div>
         </div>
-        <div class="col-auto col-md-6  col-lg-3">
+        <div class="col-auto col-md-6 col-lg-3 ">
           <div class="card pt-3">
             <img src="./images/ICON(2)-04.png" class="card-img-top mx-auto">
             <div class="card-body text-center">
@@ -501,18 +511,18 @@
   <!-- swiper -->
   <script>
     var swiper = new Swiper("#carousel", {
-      // loop: true, // 無限循環
-      // speed: 2500, // 動畫轉場的持續時間
+      loop: true, // 無限循環
+      speed: 2500, // 動畫轉場的持續時間
       // mousewheel: true, // 使用滾輪
       // 啟用分頁指示器功能
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,//輪播小點有動畫效果
         clickable: true,//點擊小點可換頁
+      },
+      autoplay: {
+        delay: 2500 // 自動播放，幾秒後下一張
       }
-      // autoplay: {
-      //   delay: 2500 // 自動播放，幾秒後下一張
-      // }
     });
 
     var swiper = new Swiper(".mySwiper", {
@@ -555,6 +565,45 @@
   <!-- 燈箱效果 -->
   <script src="./js/jquery.magnific-popup.js"></script>
   <script src="./js/jquery.magnific-popup-self.js"></script>
+
+  <!-- 設定 gsap 主程式 -->
+  <script src="./js/gsap/gsap.js"></script>
+  <!-- 使用gsap plug in -->
+  <script src="./js/gsap/ScrollTrigger.js"></script>
+  <!-- 註冊 -->
+  <script>
+    // 註冊 gsap.plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('.icon', {
+      scrollTrigger: {
+        trigger: '.icon', //觸發器
+        start: 'top center', //綠色的線
+        end: 'bottom center', //紅色的線
+        // invalidateOnRefresh: true,
+        // restart: ture,
+        // markers: true,
+      },
+      x: 500,
+      duration: 1.5,
+      opacity: 0
+    })
+
+    gsap.from('.pit', {
+      scrollTrigger: {
+        trigger: '.pit', //觸發器
+        start: 'top center', //綠色的線
+        end: 'bottom center', //紅色的線
+        // invalidateOnRefresh: true,
+        // restart: ture,
+        // markers: true,
+      },
+      x: 500,
+      duration: 1.5,
+      opacity: 0
+    })
+
+  </script>
 </body>
 
 </html>
